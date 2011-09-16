@@ -22,7 +22,7 @@ function init() {
 	scene = new THREE.Scene();
 
 	mesh = new THREE.Mesh(new THREE.SphereGeometry(500, 60, 40), new THREE.MeshBasicMaterial({ 
-        map: THREE.ImageUtils.loadTexture('http://mrdoob.github.com/three.js/examples/textures/2294472375_24a3b8ef46_o.jpg') 
+        map: THREE.ImageUtils.loadTexture('./assets/panos/sample.jpg') 
     }));
 	mesh.scale.x = -1;
 	scene.addObject( mesh );
