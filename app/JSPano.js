@@ -53,7 +53,7 @@ var JSPano = new Class({
         
         //this.renderer = new THREE.WebGLRenderer();
         //this.renderer = new THREE.CanvasRenderer();
-        this.renderer = new THREE.DOMRenderer();
+        this.renderer = new THREE.SVGRenderer();
         this.renderer.setSize(this.size.x, this.size.y);
         
         this.container.appendChild(this.renderer.domElement);
