@@ -52,7 +52,8 @@ var JSPano = new Class({
         this.scene.addObject(mesh);
         
         //this.renderer = new THREE.WebGLRenderer();
-        this.renderer = new THREE.CanvasRenderer();
+        //this.renderer = new THREE.CanvasRenderer();
+        this.renderer = new THREE.DOMRenderer();
         this.renderer.setSize(this.size.x, this.size.y);
         
         this.container.appendChild(this.renderer.domElement);
